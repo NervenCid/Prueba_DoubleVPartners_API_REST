@@ -4,7 +4,7 @@ const {Router} = require('express');
 //Ejecutamos la funcion y creamos un objeto 'router'
 const router = Router();
 
-//Importamos las funciones dentro del archivo 'books_controller.js'
+//Importamos las funciones dentro del archivo 'shoppingCart_controller.js'
 const {
     getShoppingCarts,
     createShoppingCart,
