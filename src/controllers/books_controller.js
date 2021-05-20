@@ -36,16 +36,6 @@ booksCtrl.createBook = async (req, res) => {
     res.json({ message: 'Book Creado' });    
 };
 
-//Funcion para obtener una sola book
-/*
-booksCtrl.getNote = async (req, res) => {
-    //Buscamos por 'id' una nota y la almacenamos en una constante
-    const note = await Note.findById(req.params.id);
-    console.log(note);
-    //res.json({ title: 'GET - Nota individual'});
-    res.json(note);
-};*/
-
 //Funcion para borrar un book
 booksCtrl.deleteBook = (req, res) => res.json({message : 'Metodo DELETE Books'});
 /*
