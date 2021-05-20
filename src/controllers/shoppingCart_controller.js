@@ -25,15 +25,15 @@ shoppingCartCtrl.createShoppingCart = async(req, res) => {
 };
 
 //Metodo para borrar un carrito de compra
-shoppingCartCtrl.deleteShoppingCart = (req, res) => res.json({ message: 'DELETE - Carrito eliminado' });
-/*
-shoppingCartCtrl.deleteUser = async(req, res) => {
+//shoppingCartCtrl.deleteShoppingCart = (req, res) => res.json({ message: 'DELETE - Carrito eliminado' });
+
+shoppingCartCtrl.deleteShoppingCart = async(req, res) => {
     //Buscamos por 'id' y eliminamos
-    await User.findByIdAndDelete(req.params.id);
-    console.log(User);
+    await ShoppingCart.findByIdAndDelete(req.params.id);
+    console.log(ShoppingCart);
     //Mostramos en la respuesta del servidor
     res.json({ message: 'DELETE - Usuario eliminado' });
-};*/
+};
 
 //Exportamos el modulo
 module.exports = shoppingCartCtrl;
