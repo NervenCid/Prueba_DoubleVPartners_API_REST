@@ -37,13 +37,13 @@ booksCtrl.createBook = async (req, res) => {
 };
 
 //Funcion para borrar un book
-booksCtrl.deleteBook = (req, res) => res.json({message : 'Metodo DELETE Books'});
-/*
+//booksCtrl.deleteBook = (req, res) => res.json({message : 'Metodo DELETE Books'});
+
 booksCtrl.deleteBook = async (req, res) => {
     //Buscamos por  'id' y eliminamos
     await Note.findByIdAndDelete(req.params.id);
     res.json({message: 'Book Eliminado'})
-};*/
+};
 
 //Exportamos el modulo
 module.exports = booksCtrl;
