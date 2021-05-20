@@ -41,7 +41,7 @@ booksCtrl.createBook = async (req, res) => {
 
 booksCtrl.deleteBook = async (req, res) => {
     //Buscamos por  'id' y eliminamos
-    await Note.findByIdAndDelete(req.params.id);
+    await Book.findByIdAndDelete(req.params.id);
     res.json({message: 'Book Eliminado'})
 };
 
