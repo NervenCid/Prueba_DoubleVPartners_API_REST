@@ -10,7 +10,7 @@ const booksCtrl = {};
 //booksCtrl.getBooks = (req, res) => res.json({message : 'Metodo GET Books'});
 booksCtrl.getBooks = async (req, res) => { 
     //Hacemos una consulta en todos los datos de la coleccion 'Note'
-    const books = await Book.find({userOwnerName: req.user.id}).sort({ date: "desc" }).lean();
+    const books = await Book.find().sort({ date: "desc" }).lean();
     console.log('aqui toy', books);
     //Devolvemos el resultado de la consulta
     res.json(books); 
